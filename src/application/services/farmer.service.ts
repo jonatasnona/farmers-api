@@ -5,9 +5,9 @@ import {
   InternalServerErrorException,
   NotFoundException,
 } from '@nestjs/common';
-import { FarmerRepository } from '../../domain/repositories/farmer.repository';
 import { FarmerDto } from '../dto/farmer.dto';
 import { Farmer } from '../../domain/entities/farmer.entity';
+import { FarmerRepository } from 'src/domain/repositories/farmer.repository.interface';
 
 @Injectable()
 export class FarmerService {

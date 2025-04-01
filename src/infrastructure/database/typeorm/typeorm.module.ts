@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { FarmerEntity } from '../entities/farmer.typeorm.entity';
 import 'dotenv/config';
+import { FarmerEntity } from './entities/farmer.entity';
 
 @Module({
   imports: [

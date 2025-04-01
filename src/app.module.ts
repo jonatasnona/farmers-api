@@ -3,10 +3,10 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { FarmerController } from './interfaces/http/farmer.controller';
 import { FarmerService } from './application/services/farmer.service';
 import { TypeOrmConfigModule } from './infrastructure/database/typeorm/typeorm.module';
-import { FarmerRepositoryImpl } from './infrastructure/database/repositories/farmer.repository.impl';
 import { ConfigModule } from '@nestjs/config';
-import { FarmerEntity } from './infrastructure/database/entities/farmer.typeorm.entity';
 import { InsightController } from './interfaces/http/insights.controller';
+import { FarmerRepositoryImpl } from './infrastructure/database/typeorm/repositories/farmer.repository.impl';
+import { FarmerEntity } from './infrastructure/database/typeorm/entities/farmer.entity';
 
 @Module({
   imports: [

@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
-import { FarmerRepository } from 'src/domain/repositories/farmer.repository';
-import { FarmerEntity } from '../entities/farmer.typeorm.entity';
 import { Farmer } from 'src/domain/entities/farmer.entity';
+import { FarmerRepository } from 'src/domain/repositories/farmer.repository.interface';
+import { FarmerEntity } from '../entities/farmer.entity';
 
 @Injectable()
 export class FarmerRepositoryImpl implements FarmerRepository {
