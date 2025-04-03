@@ -35,7 +35,7 @@ DATABASE_HOST=postgres
 Caso queira rodar apenas o serviço do **PostgreSQL** com Docker, execute:
 
 ```sh
-docker-compose up -d postgres
+docker compose up -d postgres
 ```
 
 ## Rodando o Projeto com Docker Compose
@@ -43,7 +43,7 @@ docker-compose up -d postgres
 Para subir o projeto completo (api + banco de dados), execute:
 
 ```sh
-docker-compose up
+docker compose up
 ```
 
 ## Rodando o Projeto Localmente
